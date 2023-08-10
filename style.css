@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #ededed;
+}
+
+body {
+    background: #081b29;
+    color: #ededed;
+    overscroll-behavior: none;
+    overflow: scroll
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px, 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s
+}
+
+.navbar {
+    background-color: #3d606e;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: rgb(0, 255, 255);
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content {
+    max-width: 1000px;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: lightseagreen;
+}
+
+.home-content li {
+    font-size: 16px;
+    margin: 10px
+}
+
+.box-features {
+    width: 320px;
+    background: linear-gradient(to bottom right, #3d606e, #081b29);;
+    height: 320px;
+    margin-bottom: 10px;
+    border-radius: 17px;
+    border: 2px solid #00abf0;
+}
+
+.box-features li {
+    color: white;
+    font-weight: 700;
+}
+
+.home-content .btn-box {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    width: 150px;
+    height: 50px;
+    background: cyan;
+    border: 2px solid #00abf0;
+    border-radius: 9px;
+    font-size: 19px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    justify-content: center;
+}
+
+.btn-box a:nth-child(2) {
+    background: transparent;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before{
+    width: 100%;
+}
+
+.content-button {
+    margin-top: 7.5px;
+}
+
+.right-feature {
+    border-radius: 2px solid #00abf0;
+    text-align: right;
+    width: 900px;
+    height: 150px;
+    margin-bottom: 20px;
+    background: cyan;
+    border: 2px solid #00abf0;
+    border-radius: 9px;
+    font-size: 19px;
+    color: white;
+    text-decoration: none;
+}
+
+
+.about-headline {
+    text-align: center;
+    font-weight: 900;
+}
+
+.join h2,
+.tickets h2,
+.leveling h2,
+.discord-panel h2,
+.giveaways h2,
+.streamplan h2,
+.autoreply h2,
+.automod h2 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.join p,
+.tickets p,
+.leveling p,
+.discord-panel p,
+.giveaways p,
+.streamplan p,
+.autoreply p,
+.automod p {
+    text-align: center;
+    font-weight: 600;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: larger;
+    background-color: #3d606e;
+    border-radius: 11px;
+}
+
+.footer {
+    background-color: #3d606e;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer img {
+    width: 15px;
+    height: 15px;
+    margin-top: 5px;
+}
+
+@keyframes scrollAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.animate-scroll {
+    animation: scrollAnimation 0.5s ease-in-out; 
+}
+
+.field {
+    margin-left: 37%;
+    margin-right: 35%;
+    border-radius: 11px;
+    background: #3d606e;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 500;
+
+}
+
+.contectfield h2 {
+    font-weight: 900;
+    margin-top: 90px;
+    text-align: center;
+}
+
+.submit {
+    border: #00abf0;
+    border-radius: 2px solid #00abf0;
+}
+
+.message-field,
+.email-field,
+.name-field {
+    background-color: #081b29;
+    margin-left: 85px;
+    margin-right: 15px;
+}
+
+.message,
+.email,
+.name {
+    font-weight: 700;
+    text-align: center;
+    margin-left: 85px;
+    margin-right: 15px;
+}
+
+.submit {
+    margin-left: 188px;
+    color: #081b29;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    border: 10px;
+}
+
+.image {
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    width: 300px; 
+    height: auto; 
+    max-width: 100%; 
+}
+
+.logo-icon {
+    position: absolute;
+    top: 70%;
+    right: 100px;
+    width: 470px;
+    height: 470px;
+    border-radius: 18px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-point {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    font-size: 2em;
+}
+
+.info-head h2 {
+    color: #00abf0;
+}
+
+.guildCount h3,
+.memberCount h3,
+.commandCount h3 {
+    font-weight: 800;
+}
+
+.guildCount p, .memberCount p, .commandCount p {
+    color: rgb(20, 163, 182);
+}
+
+.guildCount h3, .memberCount h3, .commandCount h3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.typing {
+    background-color: #081b29;
+    text-align: center;
+    color: #fff;
+    padding-top: 10em;
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+
+.typing h1 {
+    font-weight: 900; 
+    font-size: 10em; 
+}
+
+.var-highlight{
+    color: #4893b6;
+  }
+  .string-highlight{
+    color: #00abf0;
+  }
+  
+  #typewriter{
+      font-size: 2em;
+      margin: 0;
+      font-family: "Courier New";
+      background-color:#081b29;
+      border-radius: 8px;
+      background-color: #3d606e;
+      border-radius: 11px;
+      max-width: 15em;
+    }
+  
+  @-webkit-keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+  }
+  
+  @-moz-keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+  }
+  
+  @keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+  }
+
+
+.home-content h1 {
+    font-size: 5vw; 
+}
