@@ -17,8 +17,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com'; // Hier den SMTP-Host eintragen
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'reloeq@gmail.com';
-        $mail->Password   = 'wettkampf';
+        $mail->Username   = '';
+        $mail->Password   = '';
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS; // oder PHPMailer::ENCRYPTION_SMTPS
         $mail->Port       = 587; // Port entsprechend anpassen
 
